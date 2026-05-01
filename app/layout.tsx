@@ -9,17 +9,9 @@ import { ClientLayout } from "@/components/client-layout"
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://paul-and-michelle.weddinginvitationrsvp.com/"
 const canonicalUrl = siteUrl.replace(/\/$/, "")
-  const desktopHero = "/Details/linkPreviewNewPage.png"
+const desktopHero = "/Details/linkPreviewNewPage.png"
 const mobileHero = "/Details/linkPreviewNewPage.png"
-const eventImageUrl = `${canonicalUrl}${desktopHero}`
-
-// Hardcoded Cloudinary URL — image is already uploaded and always accessible via CDN.
-// f_jpg forces JPEG so all OG scrapers (iMessage, Viber, Facebook, etc.) can display it.
-// The public-folder URL is kept only as a fallback in the images array below.
-//https://res.cloudinary.com/dlkznubkj/image/upload/v1776167457/wedding-projects/arra-and-robert/Details/PreviewLink.jpg
-const OG_IMAGE_CLOUDINARY =
-    "https://res.cloudinary.com/dlkznubkj/image/upload/v1777281742/wedding-projects/paul-and-michelle/Details/linkPreviewNewPage.png"
-const OG_IMAGE_FALLBACK = `${canonicalUrl}${desktopHero}`
+const linkPreviewImageUrl = `${canonicalUrl}${desktopHero}`
 
 const coupleNames = `${siteConfig.couple.groomNickname} & ${siteConfig.couple.brideNickname}`
 const eventTitle = `${coupleNames} - Wedding Invitation`
@@ -57,7 +49,7 @@ const jsonLd = {
       },
     },
   ],
-  image: [OG_IMAGE_CLOUDINARY],
+  image: [linkPreviewImageUrl],
   description:
     `You're invited to celebrate the wedding of ${siteConfig.couple.groomNickname} & ${siteConfig.couple.brideNickname}. Discover ceremony and reception details, RSVP, and explore their story.`,
   organizer: {
@@ -131,16 +123,8 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: OG_IMAGE_CLOUDINARY,
-        secureUrl: OG_IMAGE_CLOUDINARY,
-        width: 1200,
-        height: 630,
-        type: "image/jpeg",
-        alt: `${coupleNames} Wedding Invitation - ${siteConfig.wedding.date}`,
-      },
-      {
-        url: OG_IMAGE_FALLBACK,
-        secureUrl: OG_IMAGE_FALLBACK,
+        url: linkPreviewImageUrl,
+        secureUrl: linkPreviewImageUrl,
         width: 1200,
         height: 630,
         type: "image/png",
@@ -153,7 +137,7 @@ export const metadata: Metadata = {
     title: `${coupleNames} Wedding Invitation`,
     description:
       `You're invited to the wedding of ${siteConfig.couple.groomNickname} & ${siteConfig.couple.brideNickname} on ${siteConfig.wedding.date}. RSVP, explore their story, and get all the details for the big day! #${siteConfig.couple.groomNickname}And${siteConfig.couple.brideNickname}SayIDo`,
-    images: [OG_IMAGE_CLOUDINARY, OG_IMAGE_FALLBACK],
+    images: [linkPreviewImageUrl],
     creator: `@${siteConfig.couple.groomNickname}And${siteConfig.couple.brideNickname}`,
     site: `@${siteConfig.couple.groomNickname}And${siteConfig.couple.brideNickname}`,
   },

@@ -7,15 +7,15 @@ import { siteConfig } from "@/content/site"
 import Image from "next/image"
 
 const desktopBackgroundSrcs: readonly string[] = [
-  "/desktop-background/couple (1).webp",
-  "/desktop-background/couple (2).webp",
-  "/desktop-background/couple (3).webp",
-  "/desktop-background/couple (4).webp",
-  "/desktop-background/couple (5).webp",
+  "/desktop-background/couple (24).webp",
+  "/desktop-background/couple (25).webp",
+  "/desktop-background/couple (26).webp",
+  "/desktop-background/couple (20).webp",
+  "/desktop-background/couple (21).webp",
 ]
 
 const mobileBackgroundSrcs: readonly string[] = [
-  "/frontboxes/couple (20).jpg",
+  "/frontboxes/couple (24).jpg",
 ]
 
 const SHOW_BUTTERFLIES = false
@@ -134,10 +134,64 @@ export function Hero() {
               />
             </div>
           ))}
-        {/* Bottom vignette — lifts text without crushing the photo */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/15 to-transparent z-0" />
-        {/* Top vignette — subtle shadow for navbar readability */}
-        <div className="absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-black/35 to-transparent z-0" />
+        {/* Bottom vignette — wine-tinted lift for cream text; smoother stops than flat black */}
+        <div
+          className="absolute inset-0 z-0"
+          style={{
+            background:
+              "linear-gradient(to top, color-mix(in srgb, var(--color-motif-accent) 82%, #140308) 0%, color-mix(in srgb, var(--color-motif-accent) 38%, transparent) 40%, color-mix(in srgb, var(--color-motif-deep) 12%, transparent) 62%, transparent 85%)",
+          }}
+        />
+        {/* Top vignette — motif-tinted for nav legibility */}
+        <div
+          className="absolute inset-x-0 top-0 z-0 h-44 sm:h-52 md:h-56"
+          style={{
+            background:
+              "linear-gradient(to bottom, color-mix(in srgb, var(--color-motif-deep) 52%, black) 0%, color-mix(in srgb, var(--color-motif-deep) 22%, transparent) 55%, transparent 100%)",
+          }}
+        />
+      </div>
+
+      {/* Corner flower decorations */}
+      {/* <div className="pointer-events-none absolute left-0 top-0 z-[1]">
+        <Image
+          src="/decoration/left-top-corner.png"
+          alt=""
+          width={300}
+          height={300}
+          className="w-auto h-auto max-w-[min(36vw,136px)] sm:max-w-[156px] md:max-w-[170px] opacity-90 select-none"
+          priority
+        />
+      </div> */}
+      {/* <div className="pointer-events-none absolute right-0 top-0 z-[1]">
+        <Image
+          src="/decoration/right-top-corner.png"
+          alt=""
+          width={300}
+          height={300}
+          className="w-auto h-auto max-w-[min(36vw,136px)] sm:max-w-[156px] md:max-w-[170px] opacity-90 select-none"
+          priority
+        />
+      </div> */}
+      <div className="pointer-events-none absolute left-0 bottom-0 z-[1]">
+        <Image
+          src="/decoration/left-bottom-corner.png"
+          alt=""
+          width={300}
+          height={300}
+          className="w-auto h-auto max-w-[min(36vw,136px)] sm:max-w-[156px] md:max-w-[170px] opacity-90 select-none"
+          priority
+        />
+      </div>
+      <div className="pointer-events-none absolute right-0 bottom-0 z-[1]">
+        <Image
+          src="/decoration/right-bottom-corner.png"
+          alt=""
+          width={300}
+          height={300}
+          className="w-auto h-auto max-w-[min(36vw,136px)] sm:max-w-[156px] md:max-w-[170px] opacity-90 select-none"
+          priority
+        />
       </div>
 
       {SHOW_BUTTERFLIES && (
@@ -527,7 +581,7 @@ export function Hero() {
                     className="absolute inset-0 mx-auto h-[70%] max-h-[180px] w-[100px] sm:w-[140px] md:w-[170px] rounded-full bg-gradient-to-b from-motif-soft/40 via-motif-soft/30 to-transparent blur-[28px] opacity-80"
                   />
                   <span
-                    className={`${cinzel.className} relative text-[4rem] sm:text-[5.5rem] md:text-[6.5rem] lg:text-[7rem] font-light leading-none tracking-wider text-motif-cream`}
+                    className={`${cormorant.className} relative text-[4rem] sm:text-[5.5rem] md:text-[6.5rem] lg:text-[7rem] font-light leading-none tracking-wider text-motif-cream`}
                     style={{
                       textShadow: "0 0 22px var(--color-motif-cream), 0 0 40px color-mix(in srgb, var(--color-motif-cream) 70%, transparent)",
                       filter: "drop-shadow(0 0 26px color-mix(in srgb, var(--color-motif-cream) 65%, transparent))",

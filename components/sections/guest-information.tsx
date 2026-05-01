@@ -4,7 +4,7 @@ import { Section } from "@/components/section"
 import { siteConfig } from "@/content/site"
 import { Car, Navigation, MapPin } from "lucide-react"
 import { Cormorant_Garamond, Cinzel } from "next/font/google"
-import { CloudinaryImage } from "@/components/ui/cloudinary-image"
+import Image from "next/image"
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -94,7 +94,7 @@ export function GuestInformation() {
                   <li>Ladies: Champagne Long Gown</li>
                 </ul>
                 <div className="relative w-full aspect-[4/3] max-w-[260px] sm:max-w-[280px] md:max-w-xs mx-auto md:mx-0 md:mr-auto">
-                  <CloudinaryImage
+                  <Image
                     src="/Details/principalsponsornew.png"
                     alt="Principal Sponsors attire - strictly formal"
                     fill
@@ -108,7 +108,7 @@ export function GuestInformation() {
               {/* Right: Guests - centered on mobile when stacked */}
               <div className="text-center md:text-right flex flex-col items-center md:items-end w-full min-w-0 max-w-[280px] md:max-w-none">
                 <div className="relative w-full aspect-[4/3] max-w-[260px] sm:max-w-[280px] md:max-w-xs mx-auto md:ml-auto md:mr-0 mb-3 sm:mb-5 md:mb-6 order-first">
-                  <CloudinaryImage
+                  <Image
                     src="/Details/guest.png"
                     alt="Guests attire - semi formal"
                     fill

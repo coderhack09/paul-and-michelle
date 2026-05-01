@@ -6,8 +6,8 @@ import { motion } from "motion/react"
 import { Play } from "lucide-react"
 import { useAudio } from "@/contexts/audio-context"
 import { Cinzel } from "next/font/google"
-import { CloudinaryImage } from "@/components/ui/cloudinary-image"
-import { getCloudinaryUrl } from "@/lib/cloudinary"
+import Image from "next/image"
+
 
 const cinzel = Cinzel({
   subsets: ["latin"],
@@ -125,7 +125,7 @@ export function CoupleVideo() {
         {/* Background */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
           <img
-            src={getCloudinaryUrl("/decoration/DDA foto's, afbeeldingen, assets.jpg", { width: 1920 })}
+            src="/decoration/DDA foto's, afbeeldingen, assets.jpg"
             alt=""
             aria-hidden="true"
             className="absolute inset-0 w-full h-full object-cover opacity-30"
@@ -187,7 +187,7 @@ export function CoupleVideo() {
                     className="absolute inset-0 cursor-pointer z-20"
                     onClick={handleThumbnailClick}
                   >
-                    <CloudinaryImage
+                    <Image
                       src="/mobile-background/img (2).webp"
                       alt="Video thumbnail"
                       fill

@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { siteConfig } from '@/content/site';
-import { CloudinaryImage } from '@/components/ui/cloudinary-image';
+import Image from 'next/image';
 
 interface HeroProps {
   onOpen: () => void;
@@ -35,19 +35,19 @@ const hex = {
 
 
 const desktopImages: string[] = [
-  '/desktop-background/couple (1).webp',
-  '/desktop-background/couple (2).webp',
-  '/desktop-background/couple (3).webp',
-  '/desktop-background/couple (4).webp',
-  '/desktop-background/couple (5).webp',
+  '/desktop-background/couple (24).webp',
+  '/desktop-background/couple (25).webp',
+  '/desktop-background/couple (26).webp',
+  '/desktop-background/couple (20).webp',
+  '/desktop-background/couple (21).webp',
 ];
 
 const mobileImages: string[] = [
-'/mobile-background/couple (10).webp',
-  '/mobile-background/couple (9).webp',
-  '/mobile-background/couple (20).webp',
-  '/mobile-background/couple (17).webp',
-  '/mobile-background/couple (5).webp'
+'/mobile-background/couple (63).webp',
+  '/mobile-background/couple (46).webp',
+  '/mobile-background/couple (48).webp',
+  '/mobile-background/couple (83).webp',
+  '/mobile-background/couple (7).webp'
 ];
 
 export const Hero: React.FC<HeroProps> = ({ onOpen, visible }) => {
@@ -117,7 +117,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpen, visible }) => {
               transition: 'opacity 1s ease-in-out, transform 1s ease-in-out'
             }}
           >
-            <CloudinaryImage
+            <Image
               src={src}
               alt="Couple"
               fill
@@ -170,6 +170,48 @@ export const Hero: React.FC<HeroProps> = ({ onOpen, visible }) => {
         />
       </div>
 
+      {/* Corner flower decorations */}
+      {/* <div className="pointer-events-none absolute left-0 top-0 z-[1]">
+        <Image
+          src="/decoration/left-top-corner.png"
+          alt=""
+          width={300}
+          height={300}
+          className="w-auto h-auto max-w-[min(36vw,136px)] sm:max-w-[156px] md:max-w-[170px] opacity-90 select-none"
+          priority
+        />
+      </div> */}
+      {/* <div className="pointer-events-none absolute right-0 top-0 z-[1]">
+        <Image
+          src="/decoration/right-top-corner.png"
+          alt=""
+          width={300}
+          height={300}
+          className="w-auto h-auto max-w-[min(36vw,136px)] sm:max-w-[156px] md:max-w-[170px] opacity-90 select-none"
+          priority
+        />
+      </div> */}
+      {/* <div className="pointer-events-none absolute left-0 bottom-0 z-[1]">
+        <Image
+          src="/decoration/left-bottom-corner.png"
+          alt=""
+          width={300}
+          height={300}
+          className="w-auto h-auto max-w-[min(36vw,136px)] sm:max-w-[156px] md:max-w-[170px] opacity-90 select-none"
+          priority
+        />
+      </div> */}
+      <div className="pointer-events-none absolute right-0 bottom-0 z-[1]">
+        <Image
+          src="/decoration/right-bottom-corner.png"
+          alt=""
+          width={300}
+          height={300}
+          className="w-auto h-auto max-w-[min(36vw,136px)] sm:max-w-[156px] md:max-w-[170px] opacity-90 select-none"
+          priority
+        />
+      </div>
+
       {/* Content Container */}
       <div className="relative z-10 flex flex-col items-center text-center p-6 w-full max-w-md mx-auto h-full">
         
@@ -187,7 +229,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpen, visible }) => {
                 animation: contentVisible ? 'gentleFloat 3s ease-in-out infinite' : 'none'
               }}
             >
-              <CloudinaryImage
+              <Image
                 src={siteConfig.couple.monogram}
                 alt="Monogram"
                 fill

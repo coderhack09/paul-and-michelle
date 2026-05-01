@@ -11,10 +11,6 @@ import { Section } from "@/components/section"
 // Palette lives in globals.css → @theme inline → --color-motif-*
 // Edit there once to update every component.
 
-// CSS filter approximation of --color-motif-deep (sage green). Tune if needed.
-const GALLERY_DECO_FILTER = ""
-  // "brightness(0) saturate(100%) invert(37%) sepia(20%) saturate(500%) hue-rotate(80deg) brightness(88%) contrast(92%)"
-
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
   weight: ["400"],
@@ -26,11 +22,11 @@ const cinzel = Cinzel({
 })
 
 const galleryItems = [
-  { image: "/mobile-background/couple (1).webp", text: " " },
-  { image: "/mobile-background/couple (2).webp", text: " " },
-  { image: "/mobile-background/couple (3).webp", text: " " },
+  { image: "/mobile-background/couple (30).webp", text: " " },
+  { image: "/mobile-background/couple (32).webp", text: " " },
   { image: "/mobile-background/couple (4).webp", text: " " },
-  { image: "/mobile-background/couple (5).webp", text: " " },
+  { image: "/mobile-background/couple (21).webp", text: " " },
+  { image: "/mobile-background/couple (27).webp", text: " " },
 
 ]
 
@@ -131,43 +127,43 @@ export function Gallery() {
         id="gallery"
         className="relative z-10 py-16 sm:py-20 md:py-24 lg:py-28 overflow-hidden"
       >
-      {/* Corner floral decoration - aligned with Details section */}
+      {/* Corner flower decorations */}
       <div className="absolute inset-0 pointer-events-none z-[1]">
         <Image
-          src="/decoration/flower-decoration-left-bottom-corner2.png"
+          src="/decoration/left-top-corner.png"
           alt=""
           width={300}
           height={300}
-          sizes="(max-width: 640px) 120px, (max-width: 768px) 160px, 200px"
-          className="absolute top-0 left-0 w-auto h-auto max-w-[120px] sm:max-w-[160px] md:max-w-[200px]"
-          style={{ transform: "scaleY(-1)", filter: GALLERY_DECO_FILTER }}
+          sizes="(max-width: 640px) 136px, (max-width: 768px) 156px, 170px"
+          className="absolute left-0 top-0 w-auto h-auto max-w-[min(36vw,136px)] sm:max-w-[156px] md:max-w-[170px] opacity-90 select-none"
+          priority
         />
         <Image
-          src="/decoration/flower-decoration-left-bottom-corner2.png"
+          src="/decoration/right-top-corner.png"
           alt=""
           width={300}
           height={300}
-          sizes="(max-width: 640px) 120px, (max-width: 768px) 160px, 200px"
-          className="absolute top-0 right-0 w-auto h-auto max-w-[120px] sm:max-w-[160px] md:max-w-[200px]"
-          style={{ transform: "scaleX(-1) scaleY(-1)", filter: GALLERY_DECO_FILTER }}
+          sizes="(max-width: 640px) 136px, (max-width: 768px) 156px, 170px"
+          className="absolute right-0 top-0 w-auto h-auto max-w-[min(36vw,136px)] sm:max-w-[156px] md:max-w-[170px] opacity-90 select-none"
+          priority
         />
         <Image
-          src="/decoration/flower-decoration-left-bottom-corner2.png"
+          src="/decoration/left-bottom-corner.png"
           alt=""
           width={300}
           height={300}
-          sizes="(max-width: 640px) 120px, (max-width: 768px) 160px, 200px"
-          className="absolute bottom-0 left-0 w-auto h-auto max-w-[120px] sm:max-w-[160px] md:max-w-[200px]"
-          style={{ filter: GALLERY_DECO_FILTER }}
+          sizes="(max-width: 640px) 136px, (max-width: 768px) 156px, 170px"
+          className="absolute left-0 bottom-0 w-auto h-auto max-w-[min(36vw,136px)] sm:max-w-[156px] md:max-w-[170px] opacity-90 select-none"
+          priority
         />
         <Image
-          src="/decoration/flower-decoration-left-bottom-corner2.png"
+          src="/decoration/right-bottom-corner.png"
           alt=""
           width={300}
           height={300}
-          sizes="(max-width: 640px) 120px, (max-width: 768px) 160px, 200px"
-          className="absolute bottom-0 right-0 w-auto h-auto max-w-[120px] sm:max-w-[160px] md:max-w-[200px]"
-          style={{ transform: "scaleX(-1)", filter: GALLERY_DECO_FILTER }}
+          sizes="(max-width: 640px) 136px, (max-width: 768px) 156px, 170px"
+          className="absolute right-0 bottom-0 w-auto h-auto max-w-[min(36vw,136px)] sm:max-w-[156px] md:max-w-[170px] opacity-90 select-none"
+          priority
         />
       </div>
 
@@ -175,7 +171,7 @@ export function Gallery() {
       <div className="relative z-10 text-center mb-12 sm:mb-16 md:mb-20 px-4 sm:px-6">
         <p
           className={`${cormorant.className} text-[0.7rem] sm:text-xs md:text-sm uppercase tracking-[0.28em] mb-2`}
-          style={{ color: 'var(--color-motif-medium)' }}
+          style={{ color: 'var(--color-motif-deep)' }}
         >
           Our Story in Frames
         </p>
@@ -187,7 +183,7 @@ export function Gallery() {
         </h2>
         <p
           className={`${cormorant.className} text-xs sm:text-sm md:text-base font-light max-w-xl mx-auto leading-relaxed px-2 mb-3 sm:mb-4`}
-          style={{ color: 'var(--color-motif-medium)' }}
+          style={{ color: 'var(--color-motif-deep)' }}
         >
           From our first chapter to this beautiful season of commitment, every moment has been a testament to love, faith, and grace. We share these memories with heartfelt gratitude as we look forward to the lifetime that awaits us.
         </p>
@@ -254,7 +250,7 @@ export function Gallery() {
                     ))}
                   </div>
 
-                  <p className="mt-2 text-center text-xs font-[family-name:var(--font-crimson)] tracking-wide" style={{ color: 'var(--color-motif-medium)' }}>
+                  <p className="mt-2 text-center text-xs font-[family-name:var(--font-crimson)] tracking-wide" style={{ color: 'var(--color-motif-deep)' }}>
                     Swipe to explore
                   </p>
                 </div>

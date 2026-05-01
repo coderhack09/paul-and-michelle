@@ -39,8 +39,6 @@ const BOOK_ACCENT = "var(--color-motif-deep)"    // sage green — primary
 const BOOK_DARK = "var(--color-motif-deep)"      // headings / names
 const BOOK_DARKER = "var(--color-motif-deep)"  // body text (steel blue depth)
 const BOOK_CREAM = "var(--color-motif-cream)"    // card surfaces
-const DECO_FILTER_BOOK =
-  "brightness(0) saturate(100%) invert(39%) sepia(18%) saturate(486%) hue-rotate(62deg) brightness(94%) contrast(88%)"
 
 export function BookOfGuests() {
   const [totalGuests, setTotalGuests] = useState(0)
@@ -190,49 +188,49 @@ export function BookOfGuests() {
         style={{ backgroundColor: 'var(--color-motif-cream)' }}
       />
 
-      {/* Flower decoration — warm brown tint */}
-      <div className="absolute left-0 top-0 z-0 pointer-events-none">
+      {/* Corner flower decorations */}
+      <div className="pointer-events-none absolute left-0 top-0 z-[1]">
         <Image
-          src="/decoration/flower-decoration-left-bottom-corner2.png"
+          src="/decoration/left-top-corner.png"
           alt=""
           width={300}
           height={300}
-          className="w-auto h-auto max-w-[160px] sm:max-w-[200px] md:max-w-[240px] lg:max-w-[280px] opacity-70 scale-y-[-1]"
-          priority={false}
-          // style={{ filter: DECO_FILTER_BOOK }}
+          sizes="(max-width: 640px) 136px, (max-width: 768px) 156px, 170px"
+          className="w-auto h-auto max-w-[min(36vw,136px)] sm:max-w-[156px] md:max-w-[170px] opacity-90 select-none"
+          priority
         />
       </div>
-      <div className="absolute right-0 top-0 z-0 pointer-events-none">
+      <div className="pointer-events-none absolute right-0 top-0 z-[1]">
         <Image
-          src="/decoration/flower-decoration-left-bottom-corner2.png"
+          src="/decoration/right-top-corner.png"
           alt=""
           width={300}
           height={300}
-          className="w-auto h-auto max-w-[160px] sm:max-w-[200px] md:max-w-[240px] lg:max-w-[280px] opacity-70 scale-x-[-1] scale-y-[-1]"
-          priority={false}
-          // style={{ filter: DECO_FILTER_BOOK }}
+          sizes="(max-width: 640px) 136px, (max-width: 768px) 156px, 170px"
+          className="w-auto h-auto max-w-[min(36vw,136px)] sm:max-w-[156px] md:max-w-[170px] opacity-90 select-none"
+          priority
         />
       </div>
-      <div className="absolute left-0 bottom-0 z-0 pointer-events-none">
+      <div className="pointer-events-none absolute left-0 bottom-0 z-[1]">
         <Image
-          src="/decoration/flower-decoration-left-bottom-corner2.png"
+          src="/decoration/left-bottom-corner.png"
           alt=""
           width={300}
           height={300}
-          className="w-auto h-auto max-w-[160px] sm:max-w-[200px] md:max-w-[240px] lg:max-w-[280px] opacity-70"
-          priority={false}
-          // style={{ filter: DECO_FILTER_BOOK }}
+          sizes="(max-width: 640px) 136px, (max-width: 768px) 156px, 170px"
+          className="w-auto h-auto max-w-[min(36vw,136px)] sm:max-w-[156px] md:max-w-[170px] opacity-90 select-none"
+          priority
         />
       </div>
-      <div className="absolute right-0 bottom-0 z-0 pointer-events-none">
+      <div className="pointer-events-none absolute right-0 bottom-0 z-[1]">
         <Image
-          src="/decoration/flower-decoration-left-bottom-corner2.png"
+          src="/decoration/right-bottom-corner.png"
           alt=""
           width={300}
           height={300}
-          className="w-auto h-auto max-w-[160px] sm:max-w-[200px] md:max-w-[240px] lg:max-w-[280px] opacity-70 scale-x-[-1]"
-          priority={false}
-          // style={{ filter: DECO_FILTER_BOOK }}
+          sizes="(max-width: 640px) 136px, (max-width: 768px) 156px, 170px"
+          className="w-auto h-auto max-w-[min(36vw,136px)] sm:max-w-[156px] md:max-w-[170px] opacity-90 select-none"
+          priority
         />
       </div>
 

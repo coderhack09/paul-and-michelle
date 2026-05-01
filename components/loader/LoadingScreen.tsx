@@ -11,13 +11,13 @@ interface LoadingScreenProps {
 
 // Countdown boxes with color photos - numbers show days, hours, minutes
 const COUNTDOWN_BOXES = [
-  { src: '/frontboxes/box (1).webp' },
-  { src: '/frontboxes/box (2).webp' },
-  { src: '/frontboxes/Edited-19.jpg' }
+  { src: '/frontboxes/couple (63).jpg' },
+  { src: '/frontboxes/couple (65).jpg' },
+  { src: '/frontboxes/box3.webp' }
 ];
 
-const MAIN_BW_IMAGE = '/frontboxes/Phone.webp';
-const DESKTOP_BW_IMAGE = '/frontboxes/desktop.webp';
+const MAIN_BW_IMAGE = '/mobile-background/couple (4).webp';
+const DESKTOP_BW_IMAGE = '/desktop-background/couple (20).webp';
 const STAGGER_DELAY_MS = 4000; // Each image appears every 4 seconds
 const BOX_TRANSITION_MS = 1200; // Slow, smooth transition
 const TOTAL_DURATION_MS = COUNTDOWN_BOXES.length * STAGGER_DELAY_MS + 3000;
@@ -153,7 +153,49 @@ export const LoadingScreen: React.FC<LoadingScreenProps> = ({ onComplete }) => {
         />
       </div>
 
-      <div className="relative flex flex-col flex-1 min-h-0">
+      {/* Corner flower decorations */}
+      {/* <div className="pointer-events-none absolute left-0 top-0 z-[1]">
+        <Image
+          src="/decoration/left-top-corner.png"
+          alt=""
+          width={300}
+          height={300}
+          className="w-auto h-auto max-w-[min(36vw,136px)] sm:max-w-[156px] md:max-w-[170px] opacity-90 select-none"
+          priority
+        />
+      </div> */}
+      {/* <div className="pointer-events-none absolute right-0 top-0 z-[1]">
+        <Image
+          src="/decoration/right-top-corner.png"
+          alt=""
+          width={300}
+          height={300}
+          className="w-auto h-auto max-w-[min(36vw,136px)] sm:max-w-[156px] md:max-w-[170px] opacity-90 select-none"
+          priority
+        />
+      </div> */}
+      <div className="pointer-events-none absolute left-0 bottom-0 z-[1]">
+        <Image
+          src="/decoration/left-bottom-corner.png"
+          alt=""
+          width={300}
+          height={300}
+          className="w-auto h-auto max-w-[min(36vw,136px)] sm:max-w-[156px] md:max-w-[170px] opacity-90 select-none"
+          priority
+        />
+      </div>
+      <div className="pointer-events-none absolute right-0 bottom-0 z-[1]">
+        <Image
+          src="/decoration/right-bottom-corner.png"
+          alt=""
+          width={300}
+          height={300}
+          className="w-auto h-auto max-w-[min(36vw,136px)] sm:max-w-[156px] md:max-w-[170px] opacity-90 select-none"
+          priority
+        />
+      </div>
+
+      <div className="relative z-[2] flex flex-col flex-1 min-h-0">
         {/* Top: headline + hashtag + countdown (readable over photo, no container) */}
         <div className="flex flex-col items-center justify-center w-full pt-12 sm:pt-16 md:pt-24 px-4 sm:px-6 flex-shrink-0">
           <div className="w-full max-w-lg mx-auto">

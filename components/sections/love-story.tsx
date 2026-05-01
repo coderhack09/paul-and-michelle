@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { StorySection } from '@/components/StorySection';
 import { Cinzel } from "next/font/google";
 import { siteConfig } from '@/content/site';
@@ -16,9 +17,50 @@ const cinzel = Cinzel({
 
 export function LoveStory() {
   return (
-    <div className="min-h-screen bg-motif-cream overflow-x-hidden">
+    <div className="relative min-h-screen bg-motif-cream overflow-x-hidden">
+      {/* Corner flower decorations */}
+      {/* <div className="pointer-events-none absolute left-0 top-0 z-[1]">
+        <Image
+          src="/decoration/left-top-corner.png"
+          alt=""
+          width={300}
+          height={300}
+          className="w-auto h-auto max-w-[min(36vw,136px)] sm:max-w-[156px] md:max-w-[170px] opacity-90 select-none"
+          priority
+        />
+      </div>
+      <div className="pointer-events-none absolute right-0 top-0 z-[1]">
+        <Image
+          src="/decoration/right-top-corner.png"
+          alt=""
+          width={300}
+          height={300}
+          className="w-auto h-auto max-w-[min(36vw,136px)] sm:max-w-[156px] md:max-w-[170px] opacity-90 select-none"
+          priority
+        />
+      </div>
+      <div className="pointer-events-none absolute left-0 bottom-0 z-[1]">
+        <Image
+          src="/decoration/left-bottom-corner.png"
+          alt=""
+          width={300}
+          height={300}
+          className="w-auto h-auto max-w-[min(36vw,136px)] sm:max-w-[156px] md:max-w-[170px] opacity-90 select-none"
+          priority
+        />
+      </div>
+      <div className="pointer-events-none absolute right-0 bottom-0 z-[1]">
+        <Image
+          src="/decoration/right-bottom-corner.png"
+          alt=""
+          width={300}
+          height={300}
+          className="w-auto h-auto max-w-[min(36vw,136px)] sm:max-w-[156px] md:max-w-[170px] opacity-90 select-none"
+          priority
+        />
+      </div> */}
 
-
+      <div className="relative z-[2]">
       <div className="text-center text-motif-medium z-0 relative px-4">
         <div className="w-12 sm:w-16 h-[1px] bg-motif-silver mx-auto mb-4 sm:mb-6 opacity-60"></div>
         <h1 className={`${cinzel.className} text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl uppercase tracking-[0.14em] sm:tracking-[0.18em] font-normal leading-tight text-motif-deep mt-8`}>
@@ -34,14 +76,20 @@ export function LoveStory() {
         theme="light"
         layout="image-left"
         isFirst={true}
-        title="From Secret Glances to Forever Vows"
-        imageSrc="/frontboxes/box (1).webp"
+        title="The Beginning"
+        imageSrc="/LoveStory/The Beginning.jpg"
         text={
           <>
             <p className="mb-4">
-            Many people ask us when, where, and how our story truly began. Some say it was fate, others
-say it was algorithms. For us, it was a simple moment. One we didn’t think much of at the time,
-but one that quietly changed everything.
+            Our story began in the simplest, most unexpected way—
+on April 26, 2019, at exactly 1:05 AM.
+Paul, a little drunk in his apartment in Makati,
+and Michelle, just arriving home from work in Dubai—
+two different worlds, awake at the same time.
+<br />
+
+In that quiet moment, a simple “hello” was sent—
+not knowing it would change everything.
             </p>
            
           </>
@@ -52,16 +100,15 @@ but one that quietly changed everything.
       <StorySection
         theme="dark"
         layout="image-right"
-        imageSrc="/desktop-background/couple (3).webp"
-        title="March 8, 2019 — Perfectly Matched"
+        imageSrc="/LoveStory/Late Night Conversations.jpg"
+        title="Late Night Conversations"
         text={
           <>
             <p>
-            It started with a single swipe. Mutual, effortless, and seemingly ordinary. But looking back now,
-that moment was anything but ordinary. We didn’t just find a match. We found someone who
-understood our humor, shared our perspective, and felt familiar in a way we couldn’t quite
-explain. Even before we truly got to know each other, there was already a quiet sense that this
-connection was worth exploring.
+            What started as a casual conversation quickly became something more.
+Messages turned into long talks,
+late nights became a routine,
+and distance slowly felt smaller with every shared story, laugh, and “ingat ka.”
             </p>
           </>
         }
@@ -72,16 +119,18 @@ connection was worth exploring.
         theme="light"
         layout="image-left"
         isLast={true}
-        imageSrc="/LoveStory/April 18, 2019 — Our First Conversation.webp"
-        title="April 18, 2019 — Our First Conversation"
+        imageSrc="/LoveStory/The First Meeting.jpg"
+        title="The First Meeting"
         text={
           <>
             <p>
-            What began as a simple “hey” quickly turned into hours of conversation. We remember how
-easy it was to keep talking about anything and everything. What we thought would be a short
-exchange became something we looked forward to every day. Without realizing it, we were
-already becoming part of each other’s routine, sharing pieces of our lives one conversation at a
-time.
+            Then, in July or August of 2019,
+Michelle came home from Dubai to Pangasinan—
+and for the first time, our worlds finally met.
+<br />
+In August, we saw each other face to face.
+What we built through messages felt even more real in person—
+easy, genuine, and meant to be.
            </p>
            
           </>
@@ -91,16 +140,14 @@ time.
             <StorySection
         theme="dark"
         layout="image-right"
-        imageSrc="/LoveStory/May 3, 2019 — Our First Date.webp"
-        title="May 3, 2019 — Our First Date"
+        imageSrc="/LoveStory/Shared Moments.jpg"
+        title="Shared Moments"
         text={
           <>
             <p>
-            Meeting in person came with a mix of excitement and nerves. We both wondered if the
-connection we felt would be the same in real life and it was. From the first moments,
-everything felt natural. There were a few awkward pauses, a lot of laughter, and a quiet
-realization that this was something real. That day became the beginning of something we both
-chose to hold on to.
+            We discovered how much we both loved food—
+from simple meals to spontaneous food trips,
+sharing not just plates, but laughter and moments that made everything feel like home.
             </p>
           </>
         }
@@ -111,16 +158,16 @@ chose to hold on to.
         theme="light"
         layout="image-left"
         isLast={true}
-        imageSrc="/LoveStory/June 2019 — Our First Trip Together.webp"
-        title="June 2019 — Our First Trip Together"
+        imageSrc="/LoveStory/Perfect Timing.jpg"
+        title="Perfect Timing"
         text={
           <>
             <p>
-            Soon after, we traveled together for the first time. It wasn’t just about the place. It was about
-learning how to be with each other in new situations. We navigated unfamiliar roads, made
-small decisions together, and experienced both the easy and challenging moments side by side.
-Somewhere along the way, we realized that no matter where we were, what mattered most
-was that we were together.
+            And just like any good plan—especially with Paul being good in site acquisition—
+everything fell perfectly into place.
+<br />
+On September 30, 2019,
+we officially became girlfriend and boyfriend.
             </p>
            
           </>      
@@ -130,14 +177,14 @@ was that we were together.
                   <StorySection
         theme="dark"
         layout="image-right"
-        imageSrc="/LoveStory/The Years That Followed 2 Concerts together.webp"
-        title="July 30, 2019 — Our First “Yes”"
+        imageSrc="/LoveStory/Copy of FC647A60-FA82-4963-8E5F-DE9F80558CAB_1_105_c.jpeg"
+        title="Growing Together"
         text={
           <>
             <p>
-            On this day, we made it official. With a simple “yes,” we chose each other not just for that
-moment, but for everything that would come after. It was the start of our relationship as
-partners, built on trust, respect, and the decision to grow together.
+            What we had wasn’t rushed.
+It grew naturally, patiently, and sincerely—
+built on friendship, trust, and choosing each other every single day.
             </p>
           </>
         }
@@ -148,77 +195,28 @@ partners, built on trust, respect, and the decision to grow together.
         theme="light"
         layout="image-left"
         isLast={true}
-        imageSrc="/LoveStory/The Years That Followed 1.webp"
-        title="The Years That Followed"
+        imageSrc="/LoveStory/A Love That Feels Like Home.png"
+        title="A Love That Feels Like Home"
         text={
           <>
             <p>
-            The years that followed were filled with moments. Some big, some small, all meaningful. We
-went to concerts, traveled to new places, got lost more than a few times, and learned how to
+            Through the years, we’ve shared countless conversations,
+celebrated milestones, faced challenges,
+and continued to grow not just as individuals, but together.
 <br />
+And now, as we stand here,
+we celebrate not just how our story began,
+but how far we’ve come…
 <br />
-navigate life together. We celebrated each other’s wins, supported each other through
-challenges, and slowly built a life that felt like home.
-<br />
-<br />
-We learned that love isn’t just about the highlights. It’s in the everyday moments. The
-conversations at the end of a long day, the small acts of care, the patience, the understanding,
-and even the disagreements that taught us how to listen and grow. Through it all, we kept
-choosing each other.
+From a simple message at 1:05 AM,
+to a love that feels like home—
+and a lifetime we are choosing to build together.
             </p>
            
           </>      
         }
       />
-                  {/* SECTION 8: Middle - Light */}
-                  <StorySection
-        theme="dark"
-        layout="image-right"
-        imageSrc="/LoveStory/March 2, 2025 — Our Sixth Year Together.webp"
-        title="March 2, 2025 — Our Sixth Year Together"
-        text={
-          <>
-            <p>
-            On our sixth year together, we found ourselves in Austria, standing in front of the Alps taking in
-how far we had come. In that moment, everything felt still and certain. And then, we took the
-next step.
-<br />
-<br />
-We got engaged.
 
-            </p>
-          </>
-        }
-      />
-
-      {/* SECTION 9: Bottom - Dark */}
-      <StorySection
-        theme="light"
-        layout="image-left"
-        isLast={true}
-        imageSrc="/desktop-background/couple (13).webp"
-        // title="June 2019 — Our First Trip Together"
-        text={
-          <>
-            <p>
-With full hearts and a quiet sense of certainty, we made a promise not just for that day, but for
-the life we continue to build together.
-<br />
-And now… the finale becomes the beginning.
-<br />
-With teary eyes, happy hearts, and all our favorite people as witnesses,
-<br />
-We will say “I do” to every sunrise and storm, every laugh and silence, every messy day and
-magical night.
-<br />
-This isn’t just a wedding
-<br />
-It’s the start of our forever adventure.
-            </p>
-           
-          </>      
-        }
-      />
                  
       {/* Footer Decoration */}
       <div className="bg-motif-cream pt-8 sm:pt-10 md:pt-12 pb-16 sm:pb-20 md:pb-24 text-center text-motif-deep z-0 relative px-4">
@@ -233,6 +231,7 @@ It’s the start of our forever adventure.
         </Link>
       </div>
 
+      </div>
     </div>
   );
 }

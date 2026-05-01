@@ -112,7 +112,7 @@ export const StorySection: React.FC<StorySectionProps> = ({
   /** Desktop: side-by-side only when we know it’s portrait-like; `auto` before load stays stacked to avoid wrong crop. */
   const usePortraitSplitDesktop = layoutKnown && !landscapeLike
 
-  const bgColor = isDark ? 'bg-motif-deep' : 'bg-motif-cream relative z-10'
+  const bgColor = isDark ? 'bg-motif-accent' : 'bg-motif-cream relative z-10'
   const textColor = isDark ? 'text-motif-cream' : 'text-motif-deep'
 
   const sectionRef = useRef<HTMLDivElement>(null)
@@ -133,7 +133,7 @@ export const StorySection: React.FC<StorySectionProps> = ({
 
   const imageFrameClass = isDark
     ? 'bg-motif-cream p-1.5 md:p-3 shadow-lg'
-    : 'bg-motif-cream p-1.5 md:p-3 shadow-md'
+    : 'bg-motif-medium p-1.5 md:p-3 shadow-md'
 
   const rotation =
     layout === 'image-left' ? 'rotate-1 md:rotate-2' : '-rotate-1 md:-rotate-2'

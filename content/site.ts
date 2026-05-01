@@ -1,10 +1,10 @@
 export const siteConfig = {
   couple: {
-    bride: "Elyzha Louise S. David", //Noenyl Bryle M. Gonzaga
-    brideNickname: "Elay", //Ltryl
-    groom: "Kenneth Jun J. Cajayon", //Ltryl B. Benitez
-    groomNickname: "Ken",
-    monogram:"/monogram/newmonogram.png" ,//Ltryl
+    bride: "Michelle M. Cacho", //Noenyl Bryle M. Gonzaga
+    brideNickname: "Michelle", //Ltryl
+    groom: "Paul Edward J. Caliwag", //Ltryl B. Benitez
+    groomNickname: "Paul",
+    monogram:"/monogram/monogrammodern.png" ,//Ltryl
     backgroundMusic:"/background_music/WE & US - Moira Dela Torre (Halfway Point)  Lyric Video (mp3cut.net).mp3"
   },
   googleAPI:{
@@ -19,51 +19,51 @@ export const siteConfig = {
     googleShare: "https://drive.google.com/drive/folders/1Fzv_NcPx_TvPdpU5iHsfUXOd4-QwtdnQ?usp=sharing", 
   },
   wedding: {
-    date: "November 29, 2026",
-    time: "3:00 PM",
-    venue: "San Agustin Church",
+    date: "September 30, 2026",
+    time: "3:30 PM",
+    venue: "River Palm Hotel and Resort",
     tagline: "are getting married!",
     theme: "Our wedding palette is inspired by timeless elegance and warmth.Motif Colors: Champagne Gold, Soft Beige, Warm Soft Brown",
     motif: "#BBCED5, #B9C3A8, #F3D8C5, #D1C4D4, #ECD8BA, #F4E8D8, #E1DCCF",
   },
   details: {
     rsvp: {
-      deadline: "October 14, 2026.",
-      contact: "Elyzha Louise S. David",
+      deadline: "September 20, 2026.",
+      contact: "Michelle M. Cacho",
       phone: "to be announced",
     },
   },
   giftRegistry: {
     QR_1:{
     id: "BPI",
-    src: "/QR/Gcash2.png",
+    src: "/QR/pleaseProvideQR.png",
     label: "BPI",
-    accountNumber: "Elyzha Louise S. David",
+    accountNumber: "to be announced",
     },
     QR_2:{
     id: "Gcash",
-    src: "/QR/Gcash.png",
+    src: "/QR/pleaseProvideQR.png",
     label: "Gcash",
-    accountNumber: "Kenneth Jun J. Cajayon",
+    accountNumber: "to be announced",
     }
   },
   ceremony: {
-    location: "San Agustin Church",
-    venue: "General Luna St. Intramuros, Manila",
-    map: "https://maps.app.goo.gl/auFcNBZJvBCh6RZj9",
-    date: "November 29, 2026",
-    day: "Sunday",
-    time: "3:00 PM",
+    location: "River Palm Hotel and Resort",
+    venue: "Bugallon Bridge, Banaga, Bugallon, Pangasinan",
+    map: "https://maps.app.goo.gl/5eLUFPTEhFv2KfWQA",
+    date: "September 30, 2026",
+    day: "Wednesday",
+    time: "3:30 PM",
     entourageTime: "2:00 PM",
     guestsTime: "2:30 PM",
-    image: "/Details/Church.png",
+    image: "/Details/ceremony.png",
   },
   reception: {
-    location: "Palacio De Manila",
-    venue: "1809 Del Pilar St. Malate Manila",
-    map: "https://maps.app.goo.gl/befpHeDXyTpy72CZ8",
-    date: "November 29, 2026",
-    day: "Sunday",
+    location: "River Palm Hotel and Resort",
+    venue: "Bugallon Bridge, Banaga, Bugallon, Pangasinan",
+    map: "https://maps.app.goo.gl/5eLUFPTEhFv2KfWQA",
+    date: "September 30, 2026",
+    day: "Wednesday",
     time: "5:30 PM",
     image: ["/Details/reception.png","/Details/reception1.png","/Details/reception2.png"],
   },
@@ -88,8 +88,8 @@ export const siteConfig = {
       gents: "Guests are kindly requested to wear attire in any of the shades within our wedding palette.Color pallet and image to be followed. STRICTLY no shorts, maong jeans, t-shirts, or slippers.",
       ladies: "Guests are kindly requested to wear attire in any of the shades within our wedding palette.Color pallet and image to be followed. STRICTLY no shorts, maong jeans, t-shirts, or slippers.",
       notes: "WE KINDLY ASK OUR GUEST TO WEAR THESE COLORS \n Gentlemen : Long sleeves / suit and slacks \n Ladies : Long Dress / Formal Dress",
-      photo: "/Details/guest.png",
-      palette: "#E4CBB1, #B4B1AB, #7F8873, #6380AD, #C39A74",
+      photo: "/Details/attire.png",
+      palette: "#DC3455, #D66C90, #F7BCD2, #F79033, #F4AF38, #D5CC53, #8B8F3A, #A0C5D5, #9181A6",
     },
     note: "We kindly request our guests to dress in attire following our wedding palette."
   },

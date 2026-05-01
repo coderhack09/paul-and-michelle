@@ -5,7 +5,7 @@ import { motion } from "motion/react"
 import { Instagram, Twitter, Facebook, MapPin, Calendar, Clock, Heart, Music2 } from "lucide-react"
 import { siteConfig } from "@/content/site"
 import { Cormorant_Garamond, Cinzel } from "next/font/google"
-import { CloudinaryImage } from "@/components/ui/cloudinary-image"
+import Image from "next/image"
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -131,20 +131,52 @@ export function Footer() {
       </div>
 
       <footer className="relative z-10 mt-12 sm:mt-16 overflow-hidden">
-      {/* Corner decorations — deep brown tint (hero style) */}
-      <div className="absolute left-0 top-0 z-0 pointer-events-none">
-        <CloudinaryImage src="/decoration/flower-decoration-left-bottom-corner2.png" alt="" width={300} height={300} className="w-auto h-auto max-w-[160px] sm:max-w-[200px] md:max-w-[240px] scale-y-[-1]" priority={false} style={{ filter: DECO_FILTER }} />
+      {/* Corner flower decorations */}
+      <div className="pointer-events-none absolute left-0 top-0 z-[1]">
+        <Image
+          src="/decoration/left-top-corner.png"
+          alt=""
+          width={300}
+          height={300}
+          sizes="(max-width: 640px) 136px, (max-width: 768px) 156px, 170px"
+          className="w-auto h-auto max-w-[min(36vw,136px)] sm:max-w-[156px] md:max-w-[170px] opacity-90 select-none"
+          priority
+        />
       </div>
-      <div className="absolute right-0 top-0 z-0 pointer-events-none">
-        <CloudinaryImage src="/decoration/flower-decoration-left-bottom-corner2.png" alt="" width={300} height={300} className="w-auto h-auto max-w-[160px] sm:max-w-[200px] md:max-w-[240px] scale-x-[-1] scale-y-[-1]" priority={false} style={{ filter: DECO_FILTER }} />
+      <div className="pointer-events-none absolute right-0 top-0 z-[1]">
+        <Image
+          src="/decoration/right-top-corner.png"
+          alt=""
+          width={300}
+          height={300}
+          sizes="(max-width: 640px) 136px, (max-width: 768px) 156px, 170px"
+          className="w-auto h-auto max-w-[min(36vw,136px)] sm:max-w-[156px] md:max-w-[170px] opacity-90 select-none"
+          priority
+        />
       </div>
-      <div className="absolute left-0 bottom-0 z-0 pointer-events-none">
-        <CloudinaryImage src="/decoration/flower-decoration-left-bottom-corner2.png" alt="" width={300} height={300} className="w-auto h-auto max-w-[160px] sm:max-w-[200px] md:max-w-[240px]" priority={false} style={{ filter: DECO_FILTER }} />
+      <div className="pointer-events-none absolute left-0 bottom-0 z-[1]">
+        <Image
+          src="/decoration/left-bottom-corner.png"
+          alt=""
+          width={300}
+          height={300}
+          sizes="(max-width: 640px) 136px, (max-width: 768px) 156px, 170px"
+          className="w-auto h-auto max-w-[min(36vw,136px)] sm:max-w-[156px] md:max-w-[170px] opacity-90 select-none"
+          priority
+        />
       </div>
-      <div className="absolute right-0 bottom-0 z-0 pointer-events-none">
-        <CloudinaryImage src="/decoration/flower-decoration-left-bottom-corner2.png" alt="" width={300} height={300} className="w-auto h-auto max-w-[160px] sm:max-w-[200px] md:max-w-[240px] scale-x-[-1]" priority={false} style={{ filter: DECO_FILTER }} />
+      <div className="pointer-events-none absolute right-0 bottom-0 z-[1]">
+        <Image
+          src="/decoration/right-bottom-corner.png"
+          alt=""
+          width={300}
+          height={300}
+          sizes="(max-width: 640px) 136px, (max-width: 768px) 156px, 170px"
+          className="w-auto h-auto max-w-[min(36vw,136px)] sm:max-w-[156px] md:max-w-[170px] opacity-90 select-none"
+          priority
+        />
       </div>
-      
+
       {/* Monogram / Couple Illustration - centered at top */}
       <div className="relative z-10 flex flex-col items-center pt-6 sm:pt-8 md:pt-10 mb-5 sm:mb-6 md:mb-8">
         <motion.div
@@ -154,7 +186,7 @@ export function Footer() {
           className="relative"
         >
           <div className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-72 md:h-72 lg:w-80 lg:h-80 opacity-95">
-            <CloudinaryImage
+            <Image
               src={siteConfig.couple.monogram}
               alt={`${groomNickname} & ${brideNickname} monogram`}
               fill

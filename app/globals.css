@@ -88,10 +88,10 @@
   --font-serif: "Great Vibes", "Great Vibes Fallback";
 
   /* ─── Motif palette — edit here, affects every component ─── */
-  --color-motif-deep:    #78303A;  /* deep wine - primary identity / headings */
-  --color-motif-medium:  #5F5F5F;  /* refined neutral gray - body text */
-  --color-motif-accent:  #808874;  /* sage/olive - accents & secondary highlights */
-  --color-motif-cream:   #F0E4CC;  /* warm cream - background */
+  --color-motif-deep:    #DC3455;  /* deep wine - primary identity / headings */
+  --color-motif-medium:  #8B8F3A;  /* refined neutral gray - body text */
+  --color-motif-accent:  #9280A8;  /* sage/olive - accents & secondary highlights */
+  --color-motif-cream:   #FBF4ED;  /* warm cream - background */
   --color-motif-soft:    #E6D6B8;  /* soft beige - sections/cards */
   --color-motif-silver:  #D9D9D9;  /* light neutral - borders/dividers */ /* soft silver - borders/dividers */  /* subtle neutral divider */ /* neutral divider */
   /* ─────────────────────────────────────────────────────────── */

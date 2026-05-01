@@ -8,15 +8,15 @@ export const siteConfig = {
     backgroundMusic:"/background_music/WE & US - Moira Dela Torre (Halfway Point)  Lyric Video (mp3cut.net).mp3"
   },
   googleAPI:{
-    messageForm: "https://docs.google.com/forms/d/e/1FAIpQLSehIpExxfuucYuZu7qCSTNPnHT_EcPbFgMPonCW9QfdCq4pQA/formResponse", //done
-    message: "https://script.google.com/macros/s/AKfycbx6NNrvPQMs7gIibTCOez7wy0iF3scLku8jum2xn25wNNYvp6s9a2XKY7GYCNzV1udB/exec", //done
-    guestList: "https://script.google.com/macros/s/AKfycbxyEFZp51ZdkjlltvNaefS8iUaKRAywtd4UjvihOsQJjWg9dVPNqaxeDSbfZy3DrX6Z/exec", //done
-    guestRequest: "https://script.google.com/macros/s/AKfycbw3nP62AaHOnQk727N7soXdR6ykYTX1KHNhXts0b2B3ceuottJNJ9i6CgOvqStj0V8Y/exec", //done
-    entourage: "https://script.google.com/macros/s/AKfycby-DB5BbNh4luhVx_RldROSHgDYdeui1h39bkkc1CJ3_VYtULX-3B0cLHZtc2IJj9GG/exec", //done
-    sponsors: "https://script.google.com/macros/s/AKfycbyX7ym2zphTllOUvkShfC8Y179lGTRr0oEb8WpR2NURI3BUo4swe_1oc8ptZ7rmdxcp/exec", //done
-    weddingDetails: "https://script.google.com/macros/s/AKfycbzmMfQg6dkFIa_tc8hAlXddWa9G7xxqJd3ZR8e502gtJhzLtWTVEf-FY5i_MFZSm2OT/exec", //done
+    messageForm: "https://docs.google.com/forms/d/e/1FAIpQLSc7YBMDrdZFC0AtGl3HAbeMhYAXKCnTxb1bXbgtSvW8TL_Uxg/formResponse", //done
+    message: "https://script.google.com/macros/s/AKfycbx338VawwH7iMXBymHzI7KtYUlK3E5FYCa4pv4dK7RHcR1puTtlbv1hT5dqyM7UbUs/exec", //done
+    guestList: "https://script.google.com/macros/s/AKfycbxaPHLoW_uoITjrD3BJqlsxdrkLftNMyf6J2VLwO6jXn6-RKRKq3eZMarl7NvsoMcaW/exec", //done
+    guestRequest: "https://script.google.com/macros/s/AKfycbzutVlMbYb8CLF5LSDZXD49zLgcBNoczMAKRaayuqMe2JG8rrLde59IDxGwIZC4343v/exec", //done
+    entourage: "https://script.google.com/macros/s/AKfycbxcXN6gZFsrD7gybSM3VGlCUimf7qyKLjD9ufN1vWn-76sFN2NL7A0CIE_exqkxC02v/exec", //done
+    sponsors: "https://script.google.com/macros/s/AKfycbxdW65OAzDyWbdf7EMYrWC2vMQw6Gpwvi5RvaNWYL0o8-5dJVdtIpqwpIzMQUlJYgxA/exec", //done
+    weddingDetails: "https://script.google.com/macros/s/AKfycbzwxw16VAcLq8unl6oszpU-u9RnX_hho36KW7b2cpsTlNuySkqqvp-rf76gUJLWvA2t/exec", //done
 ////google share 
-    googleShare: "https://drive.google.com/drive/folders/1Fzv_NcPx_TvPdpU5iHsfUXOd4-QwtdnQ?usp=sharing", 
+    googleShare: "https://docs.google.com/spreadsheets/d/1rlnlkRiDdYxj29aqBD-cLqp3dfLIMMmPLv5-t5DMmDU/edit?usp=sharing", 
   },
   wedding: {
     date: "September 30, 2026",
@@ -121,8 +121,8 @@ Now, as they prepare to say yes before God and the people they love most, Cather
     secondary: "#F5F5DC",
   },
   snapShare: {
-    googleDriveLink: "https://drive.google.com/drive/folders/1XHy5EuSsvL3WFLFj0JrKRxElDvGR3yxb?usp=sharing",
-    hashtag: ["#KENfinallysayIdotoELAY"],
+    googleDriveLink: "https://drive.google.com/drive/folders/1w0T5wO2wUkpnD9TXVHwTHMJsNV49IUcQ?usp=sharing",
+    hashtag: ["#PaulFinallySayIDoToMichelle","#MichelleFinallySayIDoToPaul" ,"#PaulAndMichelleSayIDo"],
     instructions: "Please scan this QR Code, create a folder with your name and upload the photos and videos you have taken during our wedding reception. We are delighted to see your snaps too!",
   },
 }
